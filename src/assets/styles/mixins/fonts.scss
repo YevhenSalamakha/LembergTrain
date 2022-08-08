@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Ubuntu:wght@400;500;700&display=swap");
+
+@mixin anton-font-400 {
+  font-family: "Anton", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin anton-font-500 {
+  font-family: "Anton", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@mixin ubuntu-font-400 {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin ubuntu-font-500 {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@mixin ubuntu-font-700 {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@mixin blc-color {
+  color: #000000;
+}
+
+@mixin bg-white-color {
+  background-color: #ffffff;
+}
+
+@mixin absolute {
+  position: absolute;
+}
+
+@mixin relative {
+  position: relative;
+}
+
+@mixin flex {
+  display: flex;
+}
+
+@mixin flex-start {
+  align-items: flex-start;
+}
+
+@mixin flex-end {
+  align-items: flex-end;
+}
+
+@mixin flex-space {
+  justify-content: space-between;
+}

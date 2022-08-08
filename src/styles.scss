@@ -1,1 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./assets/styles/overrides/reset.scss";
+@import "./assets/styles/mixins/fonts.scss";
+@import "./assets/styles/flex.scss";
+
+body {
+  @include ubuntu-font-400;
+}
