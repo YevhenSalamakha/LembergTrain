@@ -30,35 +30,3 @@
   font-style: normal;
   font-weight: 700;
 }
-
-@mixin blc-color {
-  color: #000000;
-}
-
-@mixin bg-white-color {
-  background-color: #ffffff;
-}
-
-@mixin absolute {
-  position: absolute;
-}
-
-@mixin relative {
-  position: relative;
-}
-
-@mixin flex {
-  display: flex;
-}
-
-@mixin flex-start {
-  align-items: flex-start;
-}
-
-@mixin flex-end {
-  align-items: flex-end;
-}
-
-@mixin flex-space {
-  justify-content: space-between;
-}
