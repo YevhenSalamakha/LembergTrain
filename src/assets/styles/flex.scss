@@ -6,36 +6,36 @@
   flex: 1;
 }
 
+.align-start {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
 .flex-column {
   flex-direction: column;
-
-  &.align-start {
-    align-items: flex-start;
-  }
-
-  &.align-center {
-    align-items: center;
-  }
-
-  &.align-end {
-    align-items: flex-end;
-  }
-
-  &.justify-start {
-    justify-content: flex-start;
-  }
-
-  &.justify-center {
-    justify-content: center;
-  }
-
-  &.justify-between {
-    justify-content: space-between;
-  }
-
-  &.justify-end {
-    justify-content: flex-end;
-  }
 }
 
 .flex-row {
