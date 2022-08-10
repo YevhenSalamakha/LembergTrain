@@ -1,7 +1,18 @@
 @import "./assets/styles/overrides/reset.scss";
 @import "./assets/styles/mixins/fonts.scss";
 @import "./assets/styles/flex.scss";
+@import "./assets/styles/helper-classes.scss";
+@import "colors";
 
 body {
   @include ubuntu-font-400;
+
+  a {
+    text-decoration: none;
+    color: $black;
+  }
+
+  li {
+    list-style-type: none;
+  }
 }

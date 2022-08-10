@@ -1,0 +1,49 @@
+@import "colors";
+@import "vars";
+
+.wrapper {
+  background-color: $selective-yellow;
+  padding-top: 56px;
+  padding-bottom: 10px;
+
+  .container {
+    .navbar-list {
+      li {
+        text-transform: capitalize;
+        text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+        margin-right: 36px;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+
+      a {
+        padding: 12px;
+        transition: $low-time;
+
+        &:hover {
+          background-color: $white;
+          padding: 12px 30px 12px 30px;
+          border-radius: 12px;
+          margin: 0 16px;
+        }
+      }
+
+      .active {
+        -webkit-box-shadow: 0px 6px 10px -4px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 6px 10px -4px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 6px 10px -4px rgba(0, 0, 0, 0.75);
+        text-shadow: none;
+        background-color: $white;
+        border-radius: 12px;
+        transition: $low-time;
+
+        &:hover {
+          background-color: $black;
+          color: $white;
+        }
+      }
+    }
+  }
+}
