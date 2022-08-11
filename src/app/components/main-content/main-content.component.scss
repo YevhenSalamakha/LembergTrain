@@ -1,0 +1,51 @@
+@import "colors";
+@import "fonts";
+
+.wrapper {
+  height: calc(100vh - 110px);
+  background-color: $selective-yellow;
+  .container {
+    width: 1600px;
+
+    .main-info {
+      height: 500px;
+      padding-left: 140px;
+      margin-top: 192px;
+
+      h1 {
+        @include anton-font-500;
+        text-transform: uppercase;
+        font-size: 68px;
+      }
+
+      h3 {
+        font-size: 18px;
+        margin: 40px 0 0 80px;
+      }
+
+      a {
+        margin-top: 62px;
+        margin-left: 80px;
+        width: 136px;
+        height: 16px;
+        padding: 22px;
+        text-align: center;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.08);
+        border-radius: 16px;
+        background-color: $white;
+      }
+
+      .scroll-down-btn {
+        width: 100px;
+        margin-top: 65px;
+        margin-left: 40px;
+      }
+    }
+
+    .learn-more-img {
+      margin-top: 78px;
+      width: 700px;
+      height: 548px;
+    }
+  }
+}
