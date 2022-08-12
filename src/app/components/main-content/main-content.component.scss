@@ -2,50 +2,52 @@
 @import "fonts";
 
 .wrapper {
-  height: calc(100vh - 110px);
+  min-height: calc(81.2vh - 110px);
   background-color: $selective-yellow;
-  .container {
-    width: 1600px;
 
-    .main-info {
-      height: 500px;
-      padding-left: 140px;
-      margin-top: 192px;
+  .container {
+    padding-top: 82px;
+
+    .content {
+      width: 47.8%;
 
       h1 {
-        @include anton-font-500;
-        text-transform: uppercase;
+        @include anton-font-400;
+
+        width: 78.8%;
+        padding-top: 100px;
+        color: $black;
         font-size: 68px;
+        line-height: 130%;
+        text-transform: uppercase;
+        transform: translateX(-75px);
       }
 
       h3 {
+        @include ubuntu-font-400;
+        color: $black;
         font-size: 18px;
-        margin: 40px 0 0 80px;
+        line-height: 160%;
+        margin: 34px 0 0 0;
       }
 
-      a {
-        margin-top: 62px;
-        margin-left: 80px;
-        width: 136px;
-        height: 16px;
-        padding: 22px;
-        text-align: center;
+      button {
+        padding: 22px 40px;
+        margin-top: 64px;
+        background-color: $white;
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.08);
         border-radius: 16px;
-        background-color: $white;
-      }
-
-      .scroll-down-btn {
-        width: 100px;
-        margin-top: 65px;
-        margin-left: 40px;
+        font-size: 18px;
       }
     }
 
-    .learn-more-img {
-      margin-top: 78px;
-      width: 700px;
-      height: 548px;
+    .image-container {
+      width: 43vw;
+      right: 0;
+
+      img {
+        width: 100%;
+      }
     }
   }
 }
