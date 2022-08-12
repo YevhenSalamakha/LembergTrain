@@ -13,7 +13,6 @@
 
       h1 {
         @include anton-font-400;
-
         width: 78.8%;
         padding-top: 100px;
         color: $black;
@@ -33,7 +32,7 @@
 
       button {
         padding: 22px 40px;
-        margin-top: 64px;
+        margin: 64px 0 65px 0;
         background-color: $white;
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.08);
         border-radius: 16px;
