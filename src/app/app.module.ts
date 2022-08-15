@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './components/main/main.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MainContentComponent } from './components/main-content/main-content.component';
+import { ContactsComponent } from './components/contacts/contacts.component';
+import { ContactsInfoComponent } from './components/contacts-info/contacts-info.component';
 
 @NgModule({
   declarations: [
@@ -12,12 +14,11 @@ import { MainContentComponent } from './components/main-content/main-content.com
     MainComponent,
     NavbarComponent,
     MainContentComponent,
-    
+    ContactsComponent,
+    ContactsInfoComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -1,0 +1,14 @@
+<div class="contacts-info d-flex flex-column" [class.error]="isError">
+  <label class="info">{{ label }}</label>
+  <input
+    *ngIf="type === ContactInputEnum.Input; else textareaTemplate"
+    [placeholder]="placeholder"
+    class="info-input"
+  />
+  <ng-template #textareaTemplate>
+    <textarea class="write-us-messages" [placeholder]="placeholder"></textarea>
+  </ng-template>
+  <p *ngIf="isError && errorMessage" class="error-message">
+    {{ errorMessage }}
+  </p>
+</div>
