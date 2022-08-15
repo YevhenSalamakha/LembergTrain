@@ -1,0 +1,53 @@
+@import "colors";
+@import "fonts";
+@import "inputs";
+
+.wrapper {
+  .container {
+    .contact-us {
+      margin: 86px 0 32px 0;
+      width: 18.8%;
+
+      p {
+        @include anton-font-400;
+        line-height: 76px;
+        font-size: 50px;
+        text-transform: uppercase;
+        color: $selective-yellow;
+      }
+
+      span {
+        color: $black;
+      }
+    }
+
+    form {
+      box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+      border-radius: 30px;
+      margin-bottom: 64px;
+
+      .contacts-info-containter {
+        width: 43.8%;
+        padding: 48px 0 0 60px;
+
+        .contacts-info-btn {
+          @include ubuntu-font-500;
+
+          font-size: 16px;
+          width: 33.4%;
+          background-color: $selective-yellow;
+          box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.08);
+          border-radius: 16px;
+          margin-bottom: 72px;
+
+          button {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 18px;
+            padding: 22px 32px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+<div class="wrapper d-flex flex-row justify-center">
+  <div class="container flex-column d-flex">
+    <div class="contact-us">
+      <p>contact <span>us</span></p>
+    </div>
+
+    <form>
+      <div class="contacts-info-containter d-flex flex-column">
+        <app-contacts-info
+          label="Full Name"
+          placeholder="Name Surname"
+          errorMessage="Full Name is required"
+          [isError]="true"
+        >
+        </app-contacts-info>
+        <app-contacts-info
+          label="Company Name"
+          placeholder="Company name"
+          errorMessage="Company Name is required"
+        >
+        </app-contacts-info>
+        <app-contacts-info
+          label="Phone Number"
+          placeholder="Phone Number"
+          errorMessage="Phone Number is invalid"
+          [isError]="true"
+        >
+        </app-contacts-info>
+        <app-contacts-info
+          label="Email"
+          placeholder="example@mail.com"
+          errorMessage="Email is invalid"
+          [isError]="true"
+        >
+        </app-contacts-info>
+        <app-contacts-info
+          label="Write Us Messages"
+          placeholder="Write us messages"
+          errorMessage="Write us is invalid"
+          [type]="ContactInputEnum.Textarea"
+        >
+        </app-contacts-info>
+
+        <div class="contacts-info-btn d-flex flex-column">
+          <button class="pointer">Send Message</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

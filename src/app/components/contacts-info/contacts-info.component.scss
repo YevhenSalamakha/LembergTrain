@@ -1,0 +1,60 @@
+@import "colors";
+@import "fonts";
+@import "inputs";
+@import "vars";
+
+.contacts-info {
+  margin-bottom: 50px;
+
+  .info {
+    color: $dusty-gray;
+    margin-bottom: 6px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .info-input {
+    border-bottom: 1px solid $black;
+    font-size: 18px;
+    margin-bottom: 4px;
+    padding-bottom: 8px;
+
+    &:focus {
+      &::placeholder {
+        visibility: hidden;
+      }
+    }
+  }
+
+  .write-us-messages {
+    @include ubuntu-font-400;
+
+    margin-bottom: 4px;
+    height: 140px;
+    border-bottom: 1px solid $black;
+    font-size: 18px;
+  }
+
+  .error-message {
+    color: $pomegranate;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .errorInput {
+    border-bottom: 2px solid $pomegranate;
+  }
+
+  &.error {
+    .info {
+      color: $pomegranate;
+    }
+
+    .info-input,
+    .write-us-messages {
+      border-bottom: 2px solid $pomegranate;
+    }
+  }
+}

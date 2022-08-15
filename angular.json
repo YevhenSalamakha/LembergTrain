@@ -29,8 +29,7 @@
               "includePaths": [
                 "src/assets/styles",
                 "src/assets/styles/mixins/",
-                "src/assets/styles/vars/",
-                "src/assets/styles/mixins"
+                "src/assets/styles/vars/"
               ]
             },
             "scripts": []
