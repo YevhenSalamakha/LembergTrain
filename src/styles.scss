@@ -5,7 +5,7 @@
 @import "colors";
 
 body {
-  @include ubuntu-font-400;
+  font-family: "Ubuntu";
 
   a {
     text-decoration: none;
