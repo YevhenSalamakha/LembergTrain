@@ -7,11 +7,9 @@
   margin-bottom: 50px;
 
   .info {
-    color: $dusty-gray;
+    @include fonts(12px, 400, $font-ubuntu, $dusty-gray, 14px, none);
+
     margin-bottom: 6px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
   }
 
   .info-input {
@@ -28,19 +26,15 @@
   }
 
   .write-us-messages {
-    @include ubuntu-font-400;
+    @include fonts(18px, 400, $font-ubuntu, $black, normal, none);
 
     margin-bottom: 4px;
     height: 140px;
     border-bottom: 1px solid $black;
-    font-size: 18px;
   }
 
   .error-message {
-    color: $pomegranate;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
+    @include fonts(12px, 400, $font-ubuntu, $pomegranate, 14px, none);
   }
 
   .errorInput {

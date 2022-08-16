@@ -1,6 +1,7 @@
 @import "colors";
 @import "fonts";
 @import "inputs";
+@import "vars";
 
 .wrapper {
   .container {
@@ -9,11 +10,14 @@
       width: 18.8%;
 
       p {
-        @include anton-font-400;
-        line-height: 76px;
-        font-size: 50px;
-        text-transform: uppercase;
-        color: $selective-yellow;
+        @include fonts(
+          50px,
+          400,
+          $font-anton,
+          $selective-yellow,
+          76px,
+          uppercase
+        );
       }
 
       span {
@@ -31,9 +35,6 @@
         padding: 48px 0 0 60px;
 
         .contacts-info-btn {
-          @include ubuntu-font-500;
-
-          font-size: 16px;
           width: 33.4%;
           background-color: $selective-yellow;
           box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.08);
@@ -41,9 +42,8 @@
           margin-bottom: 72px;
 
           button {
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 18px;
+            @include fonts(16px, 500, $font-ubuntu, $black, 18px, none);
+
             padding: 22px 32px;
           }
         }
