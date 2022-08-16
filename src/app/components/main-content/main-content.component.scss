@@ -12,17 +12,17 @@
       width: 47.8%;
 
       h1 {
-        @include fonts(68px, 400, "Anton", $black, 130%, uppercase);
-        
-		width: 78.8%;
+        @include fonts(68px, 400, $font-anton, $black, 130%, uppercase);
+
+        width: 78.8%;
         padding-top: 100px;
         transform: translateX(-75px);
       }
 
       h3 {
-        @include fonts(18px, 400, "Ubuntu", $black, 160%, none);
-        
-		margin: 34px 0 0 0;
+        @include fonts(18px, 400, $font-ubuntu, $black, 160%, none);
+
+        margin: 34px 0 0 0;
       }
 
       button {

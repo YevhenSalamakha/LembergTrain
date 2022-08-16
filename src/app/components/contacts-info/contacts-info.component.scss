@@ -7,7 +7,7 @@
   margin-bottom: 50px;
 
   .info {
-    @include fonts(12px, 400, "Ubuntu", $dusty-gray, 14px, none);
+    @include fonts(12px, 400, $font-ubuntu, $dusty-gray, 14px, none);
 
     margin-bottom: 6px;
   }
@@ -26,7 +26,7 @@
   }
 
   .write-us-messages {
-    @include fonts(18px, 400, "Ubuntu", $black, normal, none);
+    @include fonts(18px, 400, $font-ubuntu, $black, normal, none);
 
     margin-bottom: 4px;
     height: 140px;
@@ -34,7 +34,7 @@
   }
 
   .error-message {
-    @include fonts(12px, 400, "Ubuntu", $pomegranate, 14px, none);
+    @include fonts(12px, 400, $font-ubuntu, $pomegranate, 14px, none);
   }
 
   .errorInput {

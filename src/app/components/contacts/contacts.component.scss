@@ -9,7 +9,14 @@
       width: 18.8%;
 
       p {
-        @include fonts(50px, 400, "Anton", $selective-yellow, 76px, uppercase);
+        @include fonts(
+          50px,
+          400,
+          $font-anton,
+          $selective-yellow,
+          76px,
+          uppercase
+        );
       }
 
       span {
@@ -34,8 +41,8 @@
           margin-bottom: 72px;
 
           button {
-            @include fonts(16px, 500, "Ubuntu", $black, 18px, none);
-			
+            @include fonts(16px, 500, $font-ubuntu, $black, 18px, none);
+
             padding: 22px 32px;
           }
         }
