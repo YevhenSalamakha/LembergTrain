@@ -25,15 +25,7 @@ export class ContactsComponent {
     });
   }
 
-  ngOnInit() {
-    this.contactsForm.valueChanges.subscribe((res) => {
-      console.log(res);
-    });
-  }
-
   onCheck() {
     this.isSubmit = true;
-
-    console.log(this.isSubmit);
   }
 }
