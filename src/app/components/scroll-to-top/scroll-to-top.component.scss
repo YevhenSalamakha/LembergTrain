@@ -1,0 +1,17 @@
+@import "colors";
+@import "fonts";
+@import "inputs";
+@import "vars";
+
+.wrapper {
+  .container {
+    position: fixed;
+    top: 90%;
+
+	.scroll-top {
+      img {
+		transform: translateX(95px);
+      }
+    }
+  }
+}
