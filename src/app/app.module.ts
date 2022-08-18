@@ -7,6 +7,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { MainContentComponent } from './components/main-content/main-content.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { ContactsInfoComponent } from './components/contacts-info/contacts-info.component';
+import { FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { ContactsInfoComponent } from './components/contacts-info/contacts-info.
     ContactsComponent,
     ContactsInfoComponent,
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

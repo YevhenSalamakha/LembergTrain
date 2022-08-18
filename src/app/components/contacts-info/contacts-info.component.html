@@ -1,14 +1,38 @@
-<div class="contacts-info d-flex flex-column" [class.error]="isError">
+<div class="contacts-info d-flex flex-column">
   <label class="info">{{ label }}</label>
   <input
+    [formControl]="formControl"
     *ngIf="type === ContactInputEnum.Input; else textareaTemplate"
     [placeholder]="placeholder"
     class="info-input"
   />
   <ng-template #textareaTemplate>
-    <textarea class="write-us-messages" [placeholder]="placeholder"></textarea>
+    <textarea
+      [formControl]="formControl"
+      class="write-us-messages"
+      [placeholder]="placeholder"
+    ></textarea>
   </ng-template>
-  <p *ngIf="isError && errorMessage" class="error-message">
-    {{ errorMessage }}
-  </p>
+
+  <ng-container
+    *ngIf="isSubmit"
+    [ngSwitch]="objKeys(formControl.errors ?? {})[0]"
+  >
+    <p class="error-message" *ngSwitchCase="'required'">{{ label }} required</p>
+
+    <p *ngSwitchCase="'maxlength'" class="error-message">
+      {{ label }} max length
+    </p>
+
+    <p class="error-message" *ngSwitchCase="'pattern'">
+      {{ label }} phone number must be +380....
+    </p>
+
+    <p class="error-message" *ngSwitchCase="'email'">
+      {{ label }} must be example@mail.com
+    </p>
+    <p class="error-message" *ngSwitchCase="'minlength'">
+      {{ label }} email min length 10
+    </p>
+  </ng-container>
 </div>

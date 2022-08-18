@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ContactInputEnum } from 'src/app/app.constants';
 
 @Component({
@@ -8,8 +9,31 @@ import { ContactInputEnum } from 'src/app/app.constants';
 })
 export class ContactsComponent {
   public ContactInputEnum = ContactInputEnum;
+  public isSubmit = false;
+  public contactsForm!: FormGroup;
 
-  constructor() {}
+  constructor(private formbuilder: FormBuilder) {
+    this.contactsForm = this.formbuilder.group({
+      fullName: [undefined, [Validators.required, Validators.maxLength(20)]],
+      companyName: [undefined, [Validators.required, Validators.maxLength(15)]],
+      phoneNumber: [
+        undefined,
+        [Validators.required, Validators.pattern(/^(?:\+38)?(0[679]3\d{7})$/)],
+      ],
+      email: [undefined, [Validators.required, Validators.email]],
+      message: [undefined, [Validators.required, Validators.maxLength(300)]],
+    });
+  }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.contactsForm.valueChanges.subscribe((res) => {
+      console.log(res);
+    });
+  }
+
+  onCheck() {
+    this.isSubmit = true;
+
+    console.log(this.isSubmit);
+  }
 }
