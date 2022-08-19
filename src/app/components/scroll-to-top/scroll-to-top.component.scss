@@ -3,15 +3,29 @@
 @import "inputs";
 @import "vars";
 
-.wrapper {
-  .container {
-    position: fixed;
-    top: 90%;
+.scroll-top {
+  position: fixed;
+  right: 12vw;
+  bottom: 6vw;
+  height: 50px;
+  width: 50px;
+  background: $black;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: $low-time;
 
-	.scroll-top {
-      img {
-		transform: translateX(95px);
-      }
+  &.active {
+    transition: $low-time;
+    transform: scale(1);
+  }
+
+  &:hover {
+    img {
+      animation: slideUp 1s linear infinite;
     }
+  }
+
+  img {
+    width: 28px;
   }
 }

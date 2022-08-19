@@ -1,7 +1,7 @@
-<div class="wrapper d-flex flex-row justify-center">
-  <div class="container d-flex flex-row justify-end">
-    <button class="scroll-top pointer">
-      <img src="/assets/images/arrow.svg" alt="#" />
-    </button>
-  </div>
-</div>
+<button
+  (click)="scrollToTop()"
+  class="scroll-top pointer"
+  [class.active]="isVisible"
+>
+  <img src="/assets/images/arrow.svg" alt="#" />
+</button>

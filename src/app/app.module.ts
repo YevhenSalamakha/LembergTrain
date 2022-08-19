@@ -8,7 +8,11 @@ import { MainContentComponent } from './components/main-content/main-content.com
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { ContactsInfoComponent } from './components/contacts-info/contacts-info.component';
 import { FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.component';
+import { RouterModule, Routes } from '@angular/router';
 
+
+const routes: Routes = [];
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,8 +21,16 @@ import { FormGroup, ReactiveFormsModule } from '@angular/forms';
     MainContentComponent,
     ContactsComponent,
     ContactsInfoComponent,
+    ScrollToTopComponent,
   ],
-  imports: [BrowserModule, ReactiveFormsModule],
+  imports: [
+    BrowserModule,
+    ReactiveFormsModule,
+    RouterModule.forRoot(routes, {
+      useHash: true,
+      anchorScrolling: 'enabled',
+    }),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
