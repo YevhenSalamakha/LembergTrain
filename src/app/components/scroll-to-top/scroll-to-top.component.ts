@@ -1,6 +1,4 @@
-import { DOCUMENT, ViewportScroller } from '@angular/common';
-import { Component, HostListener, Inject, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-scroll-to-top',
