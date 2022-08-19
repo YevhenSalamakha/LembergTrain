@@ -7,7 +7,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { MainContentComponent } from './components/main-content/main-content.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { ContactsInfoComponent } from './components/contacts-info/contacts-info.component';
-import { FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { FormGroup, ReactiveFormsModule } from '@angular/forms';
     MainContentComponent,
     ContactsComponent,
     ContactsInfoComponent,
+    ScrollToTopComponent,
   ],
   imports: [BrowserModule, ReactiveFormsModule],
   providers: [],
