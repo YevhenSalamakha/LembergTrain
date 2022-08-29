@@ -46,3 +46,47 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    .container {
+      padding: 0 0 0 26px;
+      min-height: calc(100vh - 122px);
+      overflow-x: hidden;
+
+      .image-container {
+        position: relative;
+        width: 100%;
+        margin: 48px 0 0 0;
+      }
+
+      .content {
+        transform: translateX(0);
+        width: 100%;
+        margin: 44px 0 0 14px;
+
+        .learn-more-btn {
+          @include fonts(14px, 500, $font-ubuntu, $black, 16px, none);
+
+          text-align: center;
+          margin: 0;
+        }
+
+        h1 {
+          @include fonts(42px, 400, $font-anton, $black, 130%, uppercase);
+
+          transform: translateX(0);
+          padding: 0;
+          width: 76%;
+        }
+
+        h3 {
+          @include fonts(14px, 400, $font-ubuntu, $black, 160%, none);
+
+          margin: 24px 48px 26px 0;
+          width: 80%;
+        }
+      }
+    }
+  }
+} ;
