@@ -1,10 +1,14 @@
-<div class="wrapper d-flex flex-row justify-center">
+<div
+  [class.wrapper-open-menu]="isMenuOpen"
+  class="wrapper d-flex flex-row justify-center"
+>
   <div class="d-flex flex-row align-center space-between container">
     <div class="logo d-flex">
       <a href="#">
-        <img src="~/../assets/images/header/safeguard.svg" alt="#" />
+        <img src="/assets/images/header/safeguard.svg" alt="#" />
       </a>
     </div>
+
     <div class="navbar-list d-flex flex-row space-between align-center">
       <li><a href="#">home</a></li>
       <li><a href="#">about us</a></li>
@@ -12,4 +16,36 @@
       <li><a class="active" href="#">contact us</a></li>
     </div>
   </div>
+
+  <div class="icon-container" (click)="toggleMenu(!isMenuOpen)">
+    <img
+      *ngIf="!isMenuOpen; else menuClosed"
+      src="/assets/images/navbar/open.png"
+      alt="no-open-icon-menu"
+    />
+
+    <ng-template #menuClosed>
+      <img src="/assets/images/navbar/close.svg" alt="#" />
+    </ng-template>
+  </div>
+
+  <nav
+    class="mobile-version d-flex flex-column pointer"
+    [class.active]="isMenuOpen"
+  >
+    <div class="mobile-links d-flex flex-column justify-between">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">What we do</a></li>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Our history</a></li>
+      <li><a href="#">Contact us</a></li>
+
+      <p>Services</p>
+
+      <li><a href="#">Training and Implementation</a></li>
+      <li><a href="#">Cyber Consultants</a></li>
+      <li><a href="#">Consultancy and brand protection</a></li>
+      <li><a href="#">Software</a></li>
+    </div>
+  </nav>
 </div>
