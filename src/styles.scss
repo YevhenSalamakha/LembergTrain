@@ -8,6 +8,10 @@
 body {
   font-family: "Ubuntu";
 
+  &.menu-open {
+    overflow-y: hidden;
+  }
+
   a {
     text-decoration: none;
     color: $black;
