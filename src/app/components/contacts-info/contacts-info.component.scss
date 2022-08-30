@@ -28,7 +28,6 @@
   .write-us-messages {
     @include fonts(18px, 400, $font-ubuntu, $black, normal, none);
 
-    margin-bottom: 4px;
     height: 140px;
     border-bottom: 1px solid $black;
   }
@@ -49,6 +48,20 @@
     .info-input,
     .write-us-messages {
       border-bottom: 2px solid $pomegranate;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contacts-info {
+    .info-input {
+      border-bottom: 1px solid $dusty-gray;
+    }
+
+    .write-us-messages {
+      color: $dusty-gray;
+      border-bottom: none;
+      height: 100%;
     }
   }
 }
