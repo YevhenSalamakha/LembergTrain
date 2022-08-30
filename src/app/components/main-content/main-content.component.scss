@@ -39,6 +39,7 @@
     .image-container {
       width: 43vw;
       right: 0;
+      top: 60px;
 
       img {
         width: 100%;
@@ -47,7 +48,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: $mobile) {
   .wrapper {
     .container {
       padding: 0 0 0 26px;
@@ -58,6 +59,7 @@
         position: relative;
         width: 100%;
         margin: 48px 0 0 0;
+        top: auto;
       }
 
       .content {

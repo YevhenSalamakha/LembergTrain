@@ -29,3 +29,10 @@
     width: 28px;
   }
 }
+
+@media screen and (max-width: $mobile) {
+  .scroll-top {
+    height: 40px;
+    width: 40px;
+  }
+}
