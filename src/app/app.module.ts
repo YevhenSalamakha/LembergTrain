@@ -9,6 +9,7 @@ import { ContactsComponent } from './components/contacts/contacts.component';
 import { ContactsInfoComponent } from './components/contacts-info/contacts-info.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.component';
+import { ScrollDownComponent } from './components/scroll-down/scroll-down.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.c
     ContactsComponent,
     ContactsInfoComponent,
     ScrollToTopComponent,
+    ScrollDownComponent,
   ],
   imports: [BrowserModule, ReactiveFormsModule],
   providers: [],

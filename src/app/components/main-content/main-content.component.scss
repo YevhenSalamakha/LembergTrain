@@ -3,7 +3,7 @@
 @import "vars";
 
 .wrapper {
-  min-height: calc(81.2vh - 110px);
+  min-height: calc(81.2vh - 112px);
   background-color: $selective-yellow;
 
   .container {
@@ -39,7 +39,7 @@
     .image-container {
       width: 43vw;
       right: 0;
-      top: 60px;
+      top: 80px;
 
       img {
         width: 100%;
